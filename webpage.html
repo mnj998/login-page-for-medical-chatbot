@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title> Login page</title>
+      <link rel="stylesheet" href="sty.css">
+      </head>
+      <style>
+        body {
+          background-image: url('bot2.jpg');
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        </style>
+  <body>
+
+
+    <ul>
+      <li><a href="webpage.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="registration.html">register</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+
+    </ul>
+    <div class="box">
+      <h2>LOGIN</h2>
+
+      <form>
+        <div class="inputBox">
+          <input type="text" name="" required=""></input>
+          <label>Username</label>
+        </div>
+        <div class="inputBox">
+          <input type="password" name="" required=""></input>
+          <label>Password</label>
+        </div>
+        <input type="submit" name="" value="Submit">
+
+      </form>
+   </div>
+
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-analytics.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSu239S3mWDtA4TyTE_b5gTw5qGPC1sUw",
+    authDomain: "med-chatbot007.firebaseapp.com",
+    databaseURL: "https://med-chatbot007.firebaseio.com",
+    projectId: "med-chatbot007",
+    storageBucket: "med-chatbot007.appspot.com",
+    messagingSenderId: "733503275486",
+    appId: "1:733503275486:web:6495d444a4ba5360589d4f",
+    measurementId: "G-0RFNN1B2KH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>

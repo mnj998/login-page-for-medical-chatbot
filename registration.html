@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Registration</title>
+    <link rel="stylesheet" href="sty.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border: 15px solid #05beecee;
+  height: 258vh;
+  opacity:100%;
+  background-image: url('bot2.jpg');
+  background-attachment: fixed;  
+  background-size: cover;
+        }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: #ffffff00;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  height: 200%;
+  padding: 15px;
+  margin: 2px 0 22px 0;
+  display: inline-block;
+  border: solid;
+  background: #ffffff00;
+  
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgba(230, 31, 31, 0);
+  outline: border;
+}
+div.a {
+            color: red;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid rgb(250, 250, 250);
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #05beecee;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: springgreen;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(42, 135, 216);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #5e585821;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="webpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="registration.html">register</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>
+      <div class="a"> REGISTER<br>
+    </h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="ful nme"><b>Full Name</b></label>
+    <input type="text" placeholder="Full Name" name="fulnme" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label for="adrs"><b>Residential Address</b></label>
+    <input type="text" placeholder="Residential Address" name="adrs" required>
+
+    <label for="pstlcde"><b>Postal Code</b></label>
+    <input type="text" placeholder="Postal Code">
+
+    <label for="phneno"><b>Phone Number</b></label>
+    <input type="text" placeholder="Phone Number" name="phneno" required>
+
+    <label for="height"><b>Height</b></label>
+    <input type="text" placeholder="Height">
+
+    <label for="weight"><b>Weight</b></label>
+    <input type="text" placeholder="Weight">
+
+    
+    <label for="bldgrp"><b>BloodGroup</label>
+     <input type="text" placeholder="BloodGroup"> 
+    
+    <label for="gno1"><b>Guardian Number 1</b></label>
+    <input type="text" placeholder="Guardian Number 1" name="gno1" required>
+
+    <label for="gno2"><b>Guardian Number 2</b></label>
+    <input type="text" placeholder="Guardian Number 2">
+
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-analytics.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSu239S3mWDtA4TyTE_b5gTw5qGPC1sUw",
+    authDomain: "med-chatbot007.firebaseapp.com",
+    databaseURL: "https://med-chatbot007.firebaseio.com",
+    projectId: "med-chatbot007",
+    storageBucket: "med-chatbot007.appspot.com",
+    messagingSenderId: "733503275486",
+    appId: "1:733503275486:web:6495d444a4ba5360589d4f",
+    measurementId: "G-0RFNN1B2KH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>
